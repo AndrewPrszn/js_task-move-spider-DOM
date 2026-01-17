@@ -12,8 +12,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const spiderWidth = spider.offsetWidth;
     const spiderHeight = spider.offsetHeight;
 
-    let offsetLeft = e.offsetX - spiderWidth / 2;
-    let offsetTop = e.offsetY - spiderHeight / 2;
+    let offsetLeft = e.clientX - spiderWidth / 2;
+    let offsetTop = e.clientY - spiderHeight / 2;
 
     offsetLeft = Math.max(
       0,
